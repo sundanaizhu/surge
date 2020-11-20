@@ -21,7 +21,6 @@ WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=htt
 彩云天气 = type=cron,cronexp=10 8-22/2 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js,require-body=false
 # 去广告
 微信公众号去广告 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad
-# > BoxJs TF (打开地址 : boxjs.net)
-Rewrite: BoxJs = type=http-request, pattern=^https?://boxjs.net, script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+
 [MITM]
 hostname = %APPEND% api.m.jd.com, jdjoy.jd.com, draw.jdfcloud.com, api.abema.io, trade-acs.m.taobao.com, api.m.jd.com, act.10010.com, m.client.10010.com, wapside.189.cn:9001, nebula.kuaishou.com, mp.weixin.qq.com, *.amemv.com, ms.jr.jd.com, *.rr.tv, weather-data.apple.com, api.weather.com
