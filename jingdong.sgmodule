@@ -71,9 +71,9 @@
 天天加速 = type=cron, cronexp="0 5 1-23/2 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_speed.js
 
 # >>> 东东赚赚 {00:09}
- # >>>>> 打开微信, 搜索 "京东赚赚" 小程序即可获取 Cookie
- 东东赚赚 = type=cron, cronexp="0 0 9 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
- 东东赚赚获取 Cookie = type=http-request, pattern=^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex, requires-body=0, max-size=0, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
+# >>>>> 打开微信, 搜索 "京东赚赚" 小程序即可获取 Cookie
+东东赚赚 = type=cron, cronexp="0 0 9 * * *, wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
+#东东赚赚获取 Cookie = type=http-request, pattern=^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex, requires-body=0, max-size=0, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
 
 # > 临时活动
 # >>> 排行榜 (2020.12.31结束)
