@@ -25,3 +25,9 @@
 东东小窝 = type=cron,cronexp=11 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_woHome.js
 # >>> 京喜工厂 {*/3:18}
 京喜工厂 = type=cron, cronexp="0 18 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js
+# >>> 东东工厂 {*:16}
+东东工厂 = type=cron, cronexp="0 16 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js
+# >>> 京喜财富岛 {*:20}
+京喜财富岛 = type=cron, cronexp="0 20 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfd.js
+# >>> 京喜金牌厂长 {*/4:22}
+京喜金牌厂长 = type=cron, cronexp="0 22 */4 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_story.js
