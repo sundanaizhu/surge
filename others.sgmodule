@@ -1,5 +1,5 @@
 #!name=others Tasks
-#!desc=This is a Surge module about others reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-12-12 15:52
+#!desc=This is a Surge module about others reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-12-13 22:22
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 [Script]
 # > Last Update Instructions
@@ -34,8 +34,10 @@ WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=htt
 # 去广告
 微信公众号去广告 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad
 彩云天气_SVIP = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/sundanaizhu/surge/master/caiyun_svip.js
-# WPS
-# WPSCookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
+# 滴滴出行
+滴滴出行 = type=cron,cronexp="0 1,20 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+滴滴出行APPCookie = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+滴滴出行小程序Cookie = type=http-request,pattern=^https:\/\/common\.diditaxi\.com\.cn\/webapp\/config\/sidebar\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
 [MITM]
-hostname = api.abema.io, trade-acs.m.taobao.com, wapside.189.cn:9001, nebula.kuaishou.com, mp.weixin.qq.com, *.amemv.com, ms.jr.jd.com, *.rr.tv, weather-data.apple.com, api.weather.com, api.m.jd.com, biz.caiyunapp.com, zt.wps.cn, wapside.189.cn, youhui.95516.com, wapside.189.cn:9001, draw.jdfcloud.com, as.xiaojukeji.com,cloud.umetrip.com, jdjoy.jd.com
+hostname = api.abema.io, trade-acs.m.taobao.com, wapside.189.cn:9001, nebula.kuaishou.com, mp.weixin.qq.com, *.amemv.com, ms.jr.jd.com, *.rr.tv, weather-data.apple.com, api.weather.com, api.m.jd.com, biz.caiyunapp.com, zt.wps.cn, wapside.189.cn, youhui.95516.com, wapside.189.cn:9001, draw.jdfcloud.com, as.xiaojukeji.com,cloud.umetrip.com, jdjoy.jd.com, as.xiaojukeji.com, common.diditaxi.com.cn
