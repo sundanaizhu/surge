@@ -1,5 +1,5 @@
 #!name=JD Non-important Tasks
-#!desc=This is a Surge module about JD's non-important tasks. Use the GitHub address link. Please add this module as needed. Last updated: 2020-12-07 20:04
+#!desc=This is a Surge module about JD's non-important tasks. Use the GitHub address link. Please add this module as needed. Last updated: 2020-12-13 22:18
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 #!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong_unimportant.sgmodule
 #!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong_unimportant.sgmodule
@@ -29,5 +29,3 @@
 东东工厂 = type=cron, cronexp="0 16 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js
 # >>> 京喜财富岛 {*:20}
 京喜财富岛 = type=cron, cronexp="0 20 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfd.js
-# >>> 京喜金牌厂长 {*/4:22}
-京喜金牌厂长 = type=cron, cronexp="0 22 */4 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_story.js
