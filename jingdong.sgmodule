@@ -1,5 +1,5 @@
 #!name=JD Bean Tasks
-#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-12-15 11:47
+#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2020-12-15 22:35
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 
 [Script]
@@ -95,8 +95,6 @@
 # >>> 秒杀红包雨 (2020.12.31结束)
 秒杀红包雨 = type=cron, cronexp="0 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
 京东直播 = type=cron, cronexp="10-20/5 12 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js
-PUBG = type=cron, cronexp="0 12 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/sundanaizhu/surge/master/jd_pubg.js
-苹果抽奖机 = type=cron, cronexp="10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/sundanaizhu/surge/master/jd_apple_live.js
 直播红包雨 = type=cron,cronexp="0 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
 
 Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.com,script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, requires-body=true, timeout=120
