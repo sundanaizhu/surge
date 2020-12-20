@@ -55,8 +55,7 @@
 摇京豆 = type=cron,cronexp="30 8 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_club_lottery.js
 
 # >>> 京东赚赚 {00:09}
-# >>>>> 打开微信, 搜索 "京东赚赚" 小程序即可获取 Cookie, 如果获取失败尝试杀掉微信后台重新一次获取
-京东赚赚 = type=cron, cronexp="0 0 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
+京东赚赚 = type=cron, cronexp="0 0 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdzz.js
 京东赚赚获取 Cookie = type=http-request, pattern=^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex, requires-body=0, max-size=0, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
 
 # >>> 全民开红包 {00:10}
@@ -76,25 +75,32 @@
 
 # >>> 十元街 {00:12}
 十元街 = type=cron, cronexp="0 12 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js
+
 # >>> 京东快递签到 {00:10}
 京东快递签到 = type=cron, cronexp="30 10 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
 
 # >>> 领京豆额外奖励 {07:10}
-# >>>>> 活动入口：首页--领京豆
 领京豆额外奖励 = type=cron, cronexp="0 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js
 
 # >>> 京东汽车 {07:10}
-# >>>>> 活动入口：首页--京东汽车--屏幕右中部--车主福利
 京东汽车 = type=cron, cronexp="30 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js
+
 # > 临时活动
+
+# >>> 看一看 (活动结束时间为止)
+看一看 = type=cron, cronexp="0 10-20/2 9 * * * ", wake-system=1, timeout=1800, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js
 
 # >>> 排行榜 (2020.12.31结束)
 排行榜 = type=cron,cronexp="0 13 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_rankingList.js
+
 # >>> 健康抽奖机 (2020.12.31结束)
 排行榜 = type=cron,cronexp="30 9 0 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js
+
 # >>> 秒杀红包雨 (2020.12.31结束)
 秒杀红包雨 = type=cron, cronexp="0 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
+
 京东直播 = type=cron, cronexp="10-20/5 12 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js
+
 直播红包雨 = type=cron,cronexp="0 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
 
 Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.com,script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, requires-body=true, timeout=120
