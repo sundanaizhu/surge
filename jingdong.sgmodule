@@ -1,5 +1,5 @@
 #!name=JD Bean Tasks
-#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2021-01-11 10:47
+#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2021-01-12 11:27
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 
 [Script]
@@ -83,6 +83,8 @@
 领京豆额外奖励 = type=cron, cronexp="0 10 7 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js
 
 口袋书店 = type=cron,cronexp="1 8,12,18 * * *",wake-system=1,timeout=1120,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bookshop.js
+
+京东年货节 = type=cron,cronexp="1 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_nh.js
 
 # >>> 京东汽车 {07:10}
 # >>>>> 活动入口：首页--京东汽车--屏幕右中部--车主福利
