@@ -1,24 +1,10 @@
 #!name=others Tasks
-#!desc=This is a Surge module about others reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2021-01-01 18:02
+#!desc=This is a Surge module about others reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2021-01-13 15:58
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 [Script]
-# > Last Update Instructions
-# = type=cron,cronexp=7 4 * * *,wake-system=1,script-path=,script-update-interval=0
-# Cookie = type=http-request,pattern=,script-path=,script-update-interval=0
-WPSCookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
-wps = type=cron,cronexp=30 7 8 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js,script-update-interval=0
-电信整点开宝箱Cookie = type=http-request,pattern=https:\/\/alipaymini\.189\.cn:8043\/treasureBox\/queryUserActivityInfo,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dxbox.js
-电信整点开宝箱 = type=cron,cronexp=36 0 8,12,13,14,18,19,20,21,22,23 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dxbox.js
 #电信签到
 // 获取电信签到Cookie= type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js, requires-body=true
 电信签到 = type=cron,cronexp=10 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js,script-update-interval=0
-#电信金豆换话费
-# elecV2 (wapside.189.cn)
-//http-request ^https:\/\/wapside.189.cn:9001\/api\/exchange\/consume script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js, requires-body=true, tag=电信金豆换话费
-电信金豆换话费 = type=cron,cronexp=0 10 */3 * *,wake-system=1,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js,script-update-interval=0
-# 人人签到
-人人签到 = type=cron,cronexp=10 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,script-update-interval=0
-// 获取人人Cookie = type=http-request,pattern=^https:\/\/api\.rr\.tv\/user\/profile,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js,script-update-interval=0
 # 淘宝比价
 淘宝比价1 = type=http-response,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
 淘宝比价2 = type=http-request,pattern=^http://.+/amdc/mobileDispatch,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,script-update-interval=0
@@ -26,9 +12,6 @@ wps = type=cron,cronexp=30 7 8 * * *,wake-system=1,script-path=https://raw.githu
 京东比价 = type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=86400
 # > WeChat
 WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad
-# 快手签到
-快手极速版获取Cookie = type=http-request,pattern=https:\/\/nebula\.kuaishou\.com\/nebula\/task\/earning\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js
-快手极速版签到 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js,script-update-interval=0
 # 彩云天气
 彩云天气 = type=cron,cronexp=10 8-22/2 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js,require-body=false
 # 去广告
@@ -40,4 +23,4 @@ WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=htt
 滴滴出行小程序Cookie = type=http-request,pattern=^https:\/\/common\.diditaxi\.com\.cn\/webapp\/config\/sidebar\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
 [MITM]
-hostname = api.abema.io, trade-acs.m.taobao.com, wapside.189.cn:9001, nebula.kuaishou.com, mp.weixin.qq.com, *.amemv.com, ms.jr.jd.com, *.rr.tv, weather-data.apple.com, api.weather.com, api.m.jd.com, biz.caiyunapp.com, zt.wps.cn, wapside.189.cn, youhui.95516.com, wapside.189.cn:9001, draw.jdfcloud.com, as.xiaojukeji.com,cloud.umetrip.com, jdjoy.jd.com, as.xiaojukeji.com, common.diditaxi.com.cn, alipaymini.189.cn:8043, alipaymini.189.cn
+hostname = trade-acs.m.taobao.com, wapside.189.cn:9001, mp.weixin.qq.com, ms.jr.jd.com, weather-data.apple.com, api.weather.com, api.m.jd.com, biz.caiyunapp.com, wapside.189.cn, draw.jdfcloud.com, as.xiaojukeji.com, jdjoy.jd.com, common.diditaxi.com.cn
