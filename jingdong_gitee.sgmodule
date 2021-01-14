@@ -101,9 +101,6 @@
 # >>> 京东年货节 (01-09 ~ 02-09)
 京东年货节 = type=cron, cronexp="1 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nh.js
 
-# >>> 超级直播间红包雨 (截止日期不清楚)
-超级直播间红包雨 = type=cron, cronexp="0 30,31 20-23/1 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/shylocks/jd_scripts/raw/once/jd_live_redRain_26.js
-
 Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.com,script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, requires-body=true, timeout=120
 [MITM]
 hostname = %APPEND% api.m.jd.com, jdjoy.jd.com, draw.jdfcloud.com
