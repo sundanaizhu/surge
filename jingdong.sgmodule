@@ -1,5 +1,5 @@
 #!name=JD Bean Tasks
-#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2021-01-26 06:23
+#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2021-01-27 23:02
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 
 [Script]
@@ -111,8 +111,6 @@ crazyJoy任务 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=3600,scrip
 京东炸年兽🧨 = type=cron,cronexp="0 8,9,10 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js
 
 京东收🧨 = type=cron,cronexp="50 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nianCollect.js
-
-集鞭炮赢京豆 = type=cron,cronexp="10 8,21 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_firecrackers.js
 
 京东炸年兽AR = type=cron,cronexp="0 9 * * *",wake-system=1,timeout=36000,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian_ar.js
 
