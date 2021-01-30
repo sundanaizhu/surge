@@ -1,5 +1,5 @@
 #!name=JD Bean Tasks
-#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2021-01-30 16:54
+#!desc=This is a Surge module about JD's reward task. It uses the GitHub address link and contains the Boxjs TF Javescript. Last updated: 2021-01-30 22:00
 #!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
 
 [Script]
@@ -51,7 +51,7 @@
 东东超市 = type=cron,cronexp="11 1-23/5 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_superMarket.js
 
 # >>> 摇京豆 {00:06}
-摇京豆 = type=cron,cronexp="30 6 0 * * *", wake-system=1, timeout=3600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_club_lottery.js
+摇京豆 = type=cron,cronexp="5 0 * * *", wake-system=1, timeout=3600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_club_lottery.js
 
 # >>> 京东赚赚 {00:07}
 京东赚赚 = type=cron, cronexp="0 0 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdzz.js
@@ -97,10 +97,6 @@
 # > 临时活动
 # >>> 京东年货节 (01-09 ~ 02-09)
 京东年货节 = type=cron,cronexp="1 7 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nh.js
-
-超级直播间红包雨 = type=cron,cronexp="30,31 20-23/1 19 1 *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain.js
-
-直播间红包雨 = type=cron,cronexp="0,1 19-21/1 * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_live_redrain2.js
 
 京东直播 = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live.js
 
