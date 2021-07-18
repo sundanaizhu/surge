@@ -12,9 +12,13 @@
 京豆 = type=cron, cronexp="0 1 */12 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 # >>> 京东京豆变动 {09:00}
-京豆变动通知 = type=cron, cronexp="0 0 9 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/
+京豆变动通知 = type=cron, cronexp="0 0 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/sundanaizhu/loon/master/jd_bean_change.js
 
-获取互助码 = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_get_share_code.js
+获取互助码 = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/sundanaizhu/loon/master/jd_get_share_code.js
+
+京东宠汪汪 = type=cron,cronexp="15 0-23/2 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/sundanaizhu/x/main/js/jd_joy.js
+
+宠汪汪积分兑换奖品 = type=cron,cronexp="56 59 7,15,23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/sundanaizhu/x/main/js/jd_joy_reward.js
 
 # 京东比价
 京东比价 = type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/JDHelloWorld/jd_price/main/jd_price.js,script-update-interval=86400
@@ -29,6 +33,6 @@ WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,type=htt
 微信公众号去广告 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad
 
 Rewrite: BoxJs = type=http-request,pattern=^https?://boxjs.com,script-path=https://gitee.com/chavyleung/scripts/raw/master/chavy.box.js, requires-body=true, timeout=120
-
+Rewrite:宠汪汪key = type=http-request,pattern=^https://jdjoy\.jd\.com/common/gift/getBeanConfigs\?,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/sundanaizhu/x/main/js/jd_joy_reward.js
 [MITM]
 hostname = %APPEND% api.m.jd.com, jdjoy.jd.com, draw.jdfcloud.com, mp.weixin.qq.com, ms.jr.jd.com, weather-data.apple.com, api.weather.com, api.m.jd.com, biz.caiyunapp.com, draw.jdfcloud.com, as.xiaojukeji.com, jdjoy.jd.com
