@@ -1,0 +1,31 @@
+#!name=JD Non-important Tasks
+#!desc=This is a Surge module about JD's non-important tasks. Use the GitHub address link. Please add this module as needed. Last updated: 2021-01-14 11:51
+#!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
+#!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong_unimportant.sgmodule
+#!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong_unimportant.sgmodule
+
+[Script]
+# > Last Update Instructions
+# > 京豆任务
+# >>> 京东白条
+京东白条 = type=cron,cronexp=0 9 * * *,wake-system=1,timeout=10,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js
+# >>> 宠汪汪
+宠汪汪邀请助力与赛跑助力 = type=cron,cronexp="15 10 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+
+# > 非京豆任务
+# >>> 摇钱树 {02:11 10:11 18:11} (Lv.15+)
+摇钱树 = type=cron, cronexp="0 11 2-18/8 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js
+# >>> 金融养猪 {*:12}
+金融养猪 = type=cron, cronexp="0 12 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js
+# >>> 天天提鹅 {*/3:14}
+天天提鹅 = type=cron, cronexp="0 14 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js
+# >>> 东东小窝
+东东小窝 = type=cron,cronexp=11 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_woHome.js
+# >>> 京喜工厂 {*/3:18}
+京喜工厂 = type=cron, cronexp="0 18 */3 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js
+# >>> 东东工厂 {*:16}
+东东工厂 = type=cron, cronexp="0 16 * * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js
+
+获取互助码 = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_get_share_code.js
